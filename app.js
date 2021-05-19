@@ -8,7 +8,7 @@ app.listen (process.env.PORT || 3030, ()=>{
 console.log ("Mi servidor express esta funcionando en port 3030")
 });
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile (path.resolve (__dirname, "./views/home.html"))
 });
 

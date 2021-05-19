@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/catriel10/mercadoLiebre/issues"
   },
-  "homepage": "https://github.com/catriel10/mercadoLiebre#readme"
+  "homepage": "https://github.com/catriel10/mercadoLiebre#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

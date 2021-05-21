@@ -8,7 +8,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/f806b676d6.js" crossorigin="anonymous"></script>
     <title>Mercado Liebre</title>
 </head>
@@ -29,7 +29,7 @@
         <nav class="main-navbar">
             <ul class="left-navbar">
                 <li type="none"><a href="#" style="text-decoration:none">Ofertas</a></li>
-                <li type="none"><a href="/home" style="text-decoration:none"> Tiendas Oficiales</a></li>
+                <li type="none"><a href="/" style="text-decoration:none"> Tiendas Oficiales</a></li>
                 <li type="none"><a href="#" style="text-decoration:none"> Vender</a></li>
                 <li type="none"><a href="#" style="text-decoration:none"> Ayuda</a></li>
                 <br>
@@ -51,53 +51,54 @@
     
     <main>
         <form action="alta usuario" method="GET" class="create-user"> 
-            <div class="control-formulario">
-                <label>Nombre y Apellido:</label>
-                <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Usuario:</label>
-                <input type="text" name="usuario" placeholder="Usuario" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Fecha de Nacimiento:</label>
-                <input type="date" name="fecha-nacimiento" placeholder="Fecha de nacimiento" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Domicilio:</label>
-                <input type="text" name="domicilio" placeholder="Domicilio" class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Selecciona tu perfil de Usuario:</label>
-                <label><input  type="radio" name="perfil-usuario" value="Comprar">Comprar</label>
-                <label><input type="radio" name="perfil-usuario" value="Vender">Vender</label>
-            </div>
-            <div class="control-formulario">
-                <label for="category">¿Cuál es su categoría de interés?</label>
-                    <ul class="intereses">
-                        <li type="none"><input type="checkbox" name="category" id="category" value="Electro" required /> Electro</li>
-                        <li type="none"><input type="checkbox" name="category" id="category" value="Moda" required /> Moda</li>
-                        <li type="none"><input type="checkbox" name="category" id="category" value="Hogar" required /> Hogar</li>
-                        <li type="none"><input type="checkbox" name="category" id="category" value="Juguetería" required /> Juguetería</li>
-                        <li type="none"><input type="checkbox" name="category" id="category" value="Vidasana" required /> Vida sana</li>
-                    </ul>
-            </div>
-            <div class="control-formulario">
-                <label>Ingresá una foto</label>
-                <input type="file" name="foto" accept=".jpg" multiple class="control">
-            </div>
-            <div class="control-formulario">
-                <label for="password">Ingrese un password</label>
-                <input type="password" name="password" id="password" required />
-            </div>
-            <div class="control-formulario">
-                <label for="confirm-password">Confirme un password</label>
-                <input type="password" name="confirm-password" id="password" required />
-            </div>
-        
-            <button type="reset" class="boton-formulario">Borrar</button>
-            <button type="submit" class="boton-formulario">Guardar</button>
-           
+                <div class="control-user">
+                    <div class="control-formulario">
+                        <label>Nombre y Apellido:</label>
+                        <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido" class="control">
+                    </div>
+                    <div class="control-formulario">
+                        <label>Usuario:</label>
+                        <input type="text" name="usuario" placeholder="Usuario" class="control">
+                    </div>
+                    <div class="control-formulario">
+                        <label>Fecha de Nacimiento:</label>
+                        <input type="date" name="fecha-nacimiento" placeholder="Fecha de nacimiento" class="control">
+                    </div>
+                    <div class="control-formulario">
+                        <label>Domicilio:</label>
+                        <input type="text" name="domicilio" placeholder="Domicilio" class="control">
+                    </div>
+                    <div class="control-formulario">
+                        <label>Selecciona tu perfil de Usuario:</label>
+                        <label><input  type="radio" name="perfil-usuario" value="Comprar">Comprar</label>
+                        <label><input type="radio" name="perfil-usuario" value="Vender">Vender</label>
+                    </div>
+                    <div class="control-formulario">
+                        <label for="category">¿Cuál es su categoría de interés?</label>
+                            <ul class="intereses">
+                                <li type="none"><input type="checkbox" name="category" id="category" value="Electro" required /> Electro</li>
+                                <li type="none"><input type="checkbox" name="category" id="category" value="Moda" required /> Moda</li>
+                                <li type="none"><input type="checkbox" name="category" id="category" value="Hogar" required /> Hogar</li>
+                                <li type="none"><input type="checkbox" name="category" id="category" value="Juguetería" required /> Juguetería</li>
+                                <li type="none"><input type="checkbox" name="category" id="category" value="Vidasana" required /> Vida sana</li>
+                            </ul>
+                    </div>
+                    <div class="control-formulario">
+                        <label>Ingresá una foto</label>
+                        <input type="file" name="foto" accept=".jpg" multiple class="control">
+                    </div>
+                    <div class="control-formulario">
+                        <label for="password">Ingrese un password</label>
+                        <input type="password" name="password" id="password" required />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="confirm-password">Confirme un password</label>
+                        <input type="password" name="confirm-password" id="password" required />
+                    </div>
+                
+                    <button type="reset" class="boton-formulario">Borrar</button>
+                    <button type="submit" class="boton-formulario">Guardar</button>
+                </div>
         </form>
     </main>
 

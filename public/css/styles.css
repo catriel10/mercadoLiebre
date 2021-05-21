@@ -288,10 +288,6 @@ footer.ft {
   opacity: 1;
 }
 
-.fa-truck:hover {
-  transform: rotate(-90deg);
-  }
-
 .lv2{
   display:flex;
 }
@@ -375,37 +371,58 @@ main section article i {
   margin-left: 10vw;
 }
 
+.control-user {
+  display: block;
+  padding: 20px 15px;
+  position: relative;
+  margin-bottom: 10vh;
+  border-top: 1px solid #ebebeb;
+  border-radius: 0%;
+  background-color: #fff;
+  padding: 5px;
+  max-width: 300px;
+  position: relative;
+  justify-content: space-between;
+  display: inline-block;
+  align-content: center;
+  left: 2vw;
+}
+
 .create-form {
   padding:20px 15px;
   font-weight: bold;
-  max-width: 350px;
-          }
+  max-width: 250px;
+}
+
+
+
 
 .control-formulario label {
-  margin: 5px -20px;
+  margin: 5px 0vw;
   font-style: italic;
   display: block;
   font-weight: bold;
-  max-width: 350px;
+  max-width: 250px;
 }
 
 .control {
+  margin: 5px;
   padding: 8px;
   font-weight: bold;
-  max-width: 350px;
+  max-width: 250px;
   align-content: center;
 }
 
 .boton-formulario {
   background-color: #39b54a;
   border: none;
-  margin: 10px;
+  margin: 5px auto;
   padding: 5px 10px;
   font-size: 20px;
   color: #fff;
   border-radius: 5px;
   font-weight: bold;
-  max-width: 350px;
+  max-width: 250px;
 }
 
 /* Formulario Login */
@@ -422,11 +439,28 @@ main section article i {
  } 
 
 .control-login {
-  width: 360;
+  width: 300;
   font-weight: bold;
   align-content: center;
   text-align: center;
+  padding: 10px 50px;
 }
+.control-usuario {
+  display: block;
+  padding: 20px 15px;
+  position: relative;
+  margin-bottom: 10vh;
+  border-top: 1px solid #ebebeb;
+  border-radius: 0%;
+  background-color: #fff;
+  padding: 5px;
+  width: 300px;
+  position: relative;
+  justify-content: space-between;
+  display: inline-block;
+  align-content: center;
+  margin-left: -4vw;
+  }
 
 .boton-formulario-login {
   background-color: #39b54a;
@@ -437,18 +471,26 @@ main section article i {
   color: #fff;
   border-radius: 5px;
   font-weight: bold;
+  margin-left: 110px;
   transition: width 10s;
 }
 
 .boton-formulario-login:hover {
   background-color: #0022AA;
+  
 }
 .control-formulario-login label {
   display: none;
-  margin: 5px -20px;
+  margin: 5px auto;
   font-style: italic;
   display: block;
   font-weight: bold;
+  text-align: center;
+}
+
+.control-formulario-login input{
+  padding: 10px 15px;
+  margin-left: 60px;
 }
 
   /* Mobile First */
@@ -480,10 +522,6 @@ main section article i {
 .lv2 {
   font-size: 0.25em;
 }
-
-.fa-truck {
-  transform: scale(0.7);
-  }
 
 .articulos1 {
   justify-content: space-between;
@@ -628,6 +666,15 @@ footer.ft {
 .create-user {
   margin-top: 120px;
 } 
+
+.control-user {
+  left: 20vw;
+}
+
+.control-usuario {
+  margin-left: 25vw;
+  }
+
   @media (min-width: 769px) {
 
     
@@ -655,10 +702,6 @@ footer.ft {
 .lv2 {
   font-size: 0.25em;
 }
-
-.fa-truck {
-  transform: scale(0.7);
-  }
 
 .articulos1 {
   justify-content: space-between;
@@ -797,6 +840,13 @@ h3 {
 }
 .create-user {
   margin-top: 170px;
-} 
+}
+.control-user {
+  margin-left: 10vw;
+}
+.control-usuario {
+  margin-left: 35vw;
+  }
+
 }
 }

@@ -8,7 +8,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/f806b676d6.js" crossorigin="anonymous"></script>
     <title>Mercado Liebre</title>
 </head>
@@ -29,7 +29,7 @@
         <nav class="main-navbar">
             <ul class="left-navbar">
                 <li type="none"><a href="#" style="text-decoration:none">Ofertas</a></li>
-                <li type="none"><a href="/home" style="text-decoration:none"> Tiendas Oficiales</a></li>
+                <li type="none"><a href="/" style="text-decoration:none"> Tiendas Oficiales</a></li>
                 <li type="none"><a href="#" style="text-decoration:none"> Vender</a></li>
                 <li type="none"><a href="#" style="text-decoration:none"> Ayuda</a></li>
                 <br>
@@ -50,17 +50,18 @@
     </header>
     <main>
         <form action="login usuario" method="GET" class="login-user"> 
-            <div class="control-formulario-login">
-                <label>Usuario:</label>
-                <input type="text" name="usuario" placeholder="Usuario" class="control-login" required>
+            <div class="control-usuario">
+                <div class="control-formulario-login">
+                    <label>Usuario:</label>
+                    <input type="text" name="usuario" placeholder="Usuario" class="control-login" required>
+                </div>
+                <div class="control-formulario-login">
+                    <label for="password">Ingrese un password:</label>
+                    <input type="password" name="password" id="password" required />
+                </div>
+        
+                <button type="submit" class="boton-formulario-login">Enviar</button>
             </div>
-            <div class="control-formulario-login">
-                <label for="password">Ingrese un password:</label>
-                <input type="password" name="password" id="password" required />
-            </div>
-    
-            <button type="submit" class="boton-formulario-login">Enviar</button>
-           
         </form>
     </main>
     <footer class="ft">
